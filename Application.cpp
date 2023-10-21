@@ -8,8 +8,8 @@
 
 int main()
 {
-    std::ifstream input("../application/examples/input.txt");
-    std::ofstream output("../application/examples/output.txt");
+    std::ifstream input("application/examples/input.txt");
+    std::ofstream output("application/examples/output.txt");
 
     if (!input.is_open())
     {
@@ -38,7 +38,7 @@ int main()
     {
         std::pair<double, double> point = funcObj();
         output << point.first << " " << point.second << std::endl;
-        std::cout << point.first << " " << point.second << std::endl;
+        // std::cout << point.first << " " << point.second << std::endl;
     }
 
     return 0;
